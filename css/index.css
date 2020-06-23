@@ -49,7 +49,6 @@
 /* 第三部分 */
 .fl{
     width: 100%;
-    font-size: 0;
     background: #F7F9FA;
 }
 .fl-container{
@@ -81,11 +80,11 @@
 }
 .fl-container .bd{
     margin-top: 14px;
-    font-size: 0;
 }
 .fl-container .bd-l{
     display: inline-block;
     width: 288px;
+    vertical-align: top
 }
 .bd-l .bd-banner{
     position: relative;
@@ -110,20 +109,24 @@
     font-weight: bold;
     text-align: center;
 }
+.fl:nth-child(odd){
+    background-color: #F7F9FA;
+}
 .fl-products{
-    display: inline-block;
+    float: right;
     width: 912px;
+    vertical-align: top
 }
 .pro-item{
     display: inline-block;
-    width: 212px;
+    width: 200px;
     margin-left: 16px;
     margin-bottom: 16px;
     background-color: #fff;
 }
 .pro-item .img-box{
     width: 100%;
-    height: 228px;
+    height: 212px;
     overflow: hidden;
 }
 .pro-item .img-box img{
@@ -132,6 +135,13 @@
     height: auto;
     vertical-align: bottom;
     text-decoration: none;
+    transition-duration: 1s;/*过渡时间*/
+}
+.pro-item:hover img{
+    transform: scale(1.1);
+}
+.pro-item:hover p{
+    color: #FF734C;  
 }
 .pro-content{
     padding: 10px 8px 14px;
@@ -160,4 +170,318 @@
     font-size: 12px;
     color: #71797F;
     line-height: 16px;
+}
+.fl{
+    background-color: #E9ECF0;
+}
+.f-cake-banner{
+    width: 1200px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 16px 0 28px;
+    background-color: #fff;
+}
+.fcake-title{
+    height: 48px;
+}
+.fl .caketitle-box{
+    width: 288px;
+    height: 48px;
+    float: left;
+    font-size: 18px;
+    padding-left: 24px;
+    line-height: 48px;
+    background-color: #FF734C;
+    border-radius: 0 100px 100px 0;
+    color: #fff;
+}
+.titlebox-r{
+    position: relative;
+    display: inline-block;
+    margin-left: 42px;
+    vertical-align: top;
+}
+.cake-drapdown-title{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 48px;
+    cursor: pointer;
+}
+.cake-dropdown-pop{
+    /* display: none; */
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    z-index: 1000;
+    background: #fff;
+    color: #232628;
+}
+.citycont{
+    font-size: 12px;
+    width: 384px;
+    padding: 0;
+    border: 2px solid #f60;
+}
+.citycont h3{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 36px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #f60;
+}
+.citycont h4{
+    font-size: 12px;
+    line-height: 24px;
+    margin: 0 0  5px;
+    padding: 0 20px;
+    background-color: #f5f5f5;
+}
+.citycont ul{
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+}
+.citycont ul li{
+    line-height: 32px;
+    display: block;
+    float: left;
+    width: 76px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.form-box{
+    position: relative;
+    margin: 0 20px 15px;
+}
+.fcake-city ul{
+    float: right;
+}
+.fcake-city li{
+    float: left;
+    margin: 0 12px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #232628;
+}
+
+/* 蛋糕品牌 */
+.fcake-brands{
+    padding-top: 16px;
+    height: 272px;
+}
+.fcake-brands li{
+    float: left;
+    width: 168px;
+    height: 124px;
+    text-align: center;
+    color: #71797F;
+    margin-top: 20px;
+}
+.fcake-brands li img{
+    width: 108px;
+    height: 60px;
+    margin-left: 30px;
+}
+.fcake-brands li p{
+    height: 20px;
+    font-size: 14px;
+}
+.fcake-brands li p:hover{
+    color: #f60;
+}
+/* 蛋糕列表 */
+.fl-products-row {
+    float: none;
+    width: 1200px;
+}
+.fl-products-row .pro-item{
+    width:200px;
+    padding: 8px 8px 0;
+    margin: 16px 8px 0;
+    border-radius: 8px;
+    
+}
+/* 
+底部1 */
+.fl-hot{
+    height: 900px;
+}
+.hottop{
+    height: 360px;
+    background: #fff;
+}
+.hottop .hd{
+   padding-bottom: 10px;
+   padding-top: 20px;
+   padding-left: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.hottop .bd{
+    padding-left: 20px;
+    overflow: hidden;
+}
+.hotleft,.hotcenter,.hotright{
+    float: left;
+    width: 380px;
+    line-height: 34px;
+}
+.hotleft li a,.hotcenter li a,.hotright li a{
+    font-size: 14px;
+    color: #232628;
+}
+.hotleft li a:hover,.hotcenter li a:hover,.hotright li a:hover{
+    color: #f60;
+}
+.hotpinpai{
+    height: 200px;
+    margin: 80px 0;
+    border-bottom: 1px solid #ccc;
+}
+.hotpinpai li{
+    float: left;
+    width: 300px;
+    height: 40px;
+    margin: 20px 0;
+    line-height: 40px;
+}
+.hotpinpai li img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: top;
+
+}
+
+
+.fl .help-container > div{
+    float: left;
+}
+.fl .help-container > div{
+    width: 197px;
+}
+.fl .help-container > div h4{
+    font-size: 16px;
+    line-height: 24px;
+    color: #232628;
+}
+.fl .help-container > div ul{
+    margin-top: 7px;
+}
+.fl .help-container > div li{
+    font-size: 12px;
+    line-height: 24px;
+    color: #71797F;
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 68px;
+}
+.fl .help-container .help-qrcode{
+    width: 322px;
+}
+.help-qrcodeitem{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-right: 10px;
+}
+.help-qrcodeitem img{
+    width: 120px;
+    height: 120px;
+    vertical-align: middle;
+}
+.help-qrcodeitem p{
+    font-size: 14px;
+}
+/* 
+footer */
+.ft{
+    clear: both;
+    background-color: #232628;
+}
+.ft .fter-container{
+    margin: 0 auto;
+    padding: 60px 0 46px;
+    height: 180px;
+}
+.ft .ft-nav {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.ft .ft-nav a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+}
+.ft .ft-nav a:hover{
+    color: #f60;
+}
+.ft .ft-nav a + a {
+    padding-left: 32px;
+    margin-left: 26px;
+    border-left: 1px solid #fff;
+}
+.ft .ft-site p {
+    font-size: 12px;
+    color: #71797F;
+    line-height: 22px;
+}
+
+.ft-auth{
+    margin-top: 7px;
+    height: 40px;
+}
+.ft-auth a{
+    display: inline-block;
+}
+.ft-auth span.icon1,.ft-auth span.icon2,.ft-auth span.icon3,.ft-auth span.icon4{
+    display: inline-block;
+    background-image: url("../images/common_sprite.png");
+    background-repeat: no-repeat;
+}
+.ft-auth span.icon1{
+    width: 149px;
+    height: 40px;
+    background-position: -524px -139px;
+}
+.ft-auth span.icon2{
+    width: 123px;
+    height: 40px;
+    background-position: -677px -139px;
+}
+.ft-auth span.icon3{
+    width: 45px;
+    height: 40px;
+    background-position: -806px -139px;
+}
+.ft-auth span.icon4{
+    width: 37px;
+    height: 40px;
+    background-image: url("../images/govIcon.gif");
+    background-position: 0 0;
+    background-size: cover;
+}
+
+.ft .ft-link {
+    margin-top: 10px;
+    color: #71797F;
+}
+.ft .ft-link span {
+    margin-right: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+}
+.ft .ft-link a {
+    font-size: 12px;
+    line-height: 16px;
+    color: #71797F;
 }
