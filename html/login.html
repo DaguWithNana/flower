@@ -4,8 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录页</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/public.css">
+    
+    <link rel="stylesheet" href="../iconfoot/iconfont.css">
+    <script src="../iconfoot/iconfont.js" href="http://at.alicdn.com/t/font_1700460_day41wqfbtk.css"></script>
+    <script src="../jq/jquery.js"></script>
 </head>
 <body>
-    
+    <div class="top-nav clearFixed::after">
+        <!-- 宽1200高40 -->
+        <div class="topnavCon main">
+            <ul class="topnavLeft">
+                <li><a href="javascript:void(0)"><span class="iconfont icon-icon-5"></span>收藏鲜花网(hua.com)</a></li>
+                <li class="menu">
+                    <a href="javascript:void(0)">
+                        <span class="iconfont icon-gongzhonghao"></span>
+                        关注微信
+                    </a>
+                    <div class="weixin">
+                        <img src="../images/wxguanjia_qrcode.png" alt="" width="124px">
+                        <p>
+                            "扫码关注"<br/>"回复"礼物" 更多惊喜！"
+                        </p>
+                    </div>
+                </li>
+                <li class="menu">
+                    <a href="javascript:void(0)">
+                        <span class="iconfont icon-mobile_phone"></span>
+                        花礼网app
+                    </a>
+                    <div class="weixin">
+                        <img src="../images/wxguanjia_qrcode.png" alt="" width="124px">
+                        <p>
+                            "扫码关注"<br/>"回复"礼物" 更多惊喜！"
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="topnavRight">
+                <li><a href="javascript:;">你好，请登录</a>
+                    <a href="javascript:;">注册</a>
+                </li>
+                <li><a href="javascript:;">订单查询</a></li>
+                <li class="menu2">
+                    <a href="javascript:;">客户服务</a>
+                    <div class="kehuserver">
+                        <a href="javscript:;">在线付款</a>
+                        <a href="javscript:;">帮助中心</a>
+                        <a href="javscript:;">售后服务</a>
+                        <a href="javscript:;">配送范围</a>
+                        <a href="javscript:;">留言反馈</a>
+                    </div>
+                </li>
+                <li><a href="javascript:;">
+                    购物车
+                    <span>(0)</span></a></li>
+                <li><a href="javascript:;">
+                    中国鲜花礼品网:中国鲜花网领先品牌
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header main">
+            <div class="logo">
+                <img src="../images/common_spritelogo.png" alt="">
+            </div>
+            <div class="loginsear">
+                <form action="" method="">
+                    <div class="sear-box">                        
+                        <input type="text" name="" id="" class="searinput" placeholder="商品搜索">
+                        <span class="sear-btn">
+                            <button class="searbutton" type="button">搜索</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <div class="tel">
+                <div class="tel1">
+                    <img src="../images/common_sprite_tel.png" alt="">
+                    <div class="tel-info">400-889-8188</div>
+                </div>
+                <div class="tel2">
+                    <img src="../images/common_sprite_tel2.png" alt="">
+                    <div class="tel-info">
+                        <a href="javascript:;">在线客服</a>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+    <!-- 头部end -->
+    <section class="login-wrap">
+        <div class="container">
+            <div class="login-box">
+                <ul class="login-tabs">
+                    <li class="login-account active">账号登录</li>
+                    <li class="login-wx">微信扫码登录</li>
+                </ul>
+                <!-- 账号登录 -->
+                <div class="form1">
+                    <div class="login-form-pwd">
+                        <div class="account">
+                            <div class="input-box">
+                                <span class="iconfont icon-shouji"></span>
+                                <input type="text" id="username" name="username" class="account" placeholder="请输入手机号/邮箱">
+                            </div>
+                            <div class="pwd-box">
+                                <span class="iconfont icon-mima"></span>
+                                <input type="password" id="pwd" name="pwd" class="password" placeholder="请输入密码">
+                            </div>
+                            <input type="button" class="form-btn login-btn" id="dosubmit" value="登录"  >
+                            <div class="form-tip">
+                                <a href="" class="pwd-forget">忘记密码？</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                <!-- 微信扫码登录 -->
+                     <!-- 微信扫码登录 -->
+                    <div class="login-form login-form-wx" style="display:none;">
+                        <div id="QrCodeBox" class="qrcode-box">
+                            <div class="qrcode-img">
+                                <img src="https://m.hua.com/wxapi/tempqrpic?pid=d9aecc79c9644d8aa18d5989cb4f25d1&userid=&type=8&sj=2020-6-23&sign=93efdfea1b8eca1d" alt="微信扫码" draggable="false" />
+                                <i class="layer-bt"></i><i class="layer-bb"></i><i class="layer-bl"></i><i class="layer-br"></i>
+                            </div>
+                            <div class="qrcode-text">微信扫码  快速登录<i class="mini-icon icon-question"></i><p class="pop-tips">关注花礼网微信公众号登录</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-box">
+                    <ul class="other-login-ways">
+                        <li class="login-way login-qq"><a href="/Passport/QQ/Login"><i class="iconfont icon-logo-qq"></i><span>QQ</span></a></li>
+                        <li class="login-way login-ali"><a href="/Passport/Alipay/Login"><i class="iconfont icon-zhifubao"></i><span>支付宝</span></a></li>
+                        <li class="extra-r"><a href="/Passport/Register/">注册账号<i class="iconfont icon-youjiantou"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 内容结束 -->
+
+     <!-- footer -->
+     <div class="ft" style="background-color: #fff;">
+        <div class="fter-container main">
+            <!-- foot导航 -->
+            <div class="ft-nav-login">
+                <a href="javascript:;">首页</a>
+                <a href="javascript:;">关于我们</a>
+                <a href="javascript:;">媒体报道</a>
+                <a href="javascript:;">联系方式</a>
+                <a href="javascript:;">企业团购</a>
+                <a href="javascript:;">花店入驻</a>
+                <a href="javascript:;">友情链接</a>
+                <a href="javascript:;">在线补款</a>
+                <a href="javascript:;">为什么选择中国鲜花礼品网</a>
+            </div>
+            <!-- foot证书 -->
+            <div class="ft-site" style="text-align: center;">  
+                <div class="ft-auth" style=" padding: 20px 0;">
+                    <a href="javascript:;"><span class="icon1"></span></a>
+                    <a href="javascript:;"><span class="icon2"></span></a>
+                    <a href="javascript:;"><span class="icon3"></span></a>
+                    <a href="javascript:;"><span class="icon4"></span></a>
+                </div>
+                <p>中国花卉协会会员 中国电子商务协会会员 ICP经营许可证：粤B2-20050744 粤ICP备09171662号 粤公网安备44030502000373号 Copyright © 2005-2020</p>
+                <p>花礼网 （中国鲜花礼品网） www.hua.com 深圳市百易信息技术有限公司 中国鲜花网领先品牌，鲜花速递专家！</p>
+            </div>
+           
+        </div>
+    </div>
+<!-- footer结束 -->
 </body>
 </html>

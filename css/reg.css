@@ -1,0 +1,17 @@
+.input-box .get-code {
+    background: #E9ECF0;
+    color: #232628;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 96px;
+    height: 100%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 34px;
+    padding-top: 0;
+    padding-left: 0;
+}

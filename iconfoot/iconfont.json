@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "2325695",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "9099446",
+      "name": "信息",
+      "font_class": "tubiao-",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "429883",
+      "name": "QQ",
+      "font_class": "logo-qq",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "8574987",
+      "name": "支付宝",
+      "font_class": "zhifubao",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "13725149",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "14055529",
+      "name": "QQ",
+      "font_class": "QQ1",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
       "icon_id": "7148955",
       "name": "右箭头",
       "font_class": "youjiantou",
