@@ -208,7 +208,7 @@
     cursor: pointer;
 }
 .cake-dropdown-pop{
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 100%;
     left: -20px;

@@ -1,0 +1,257 @@
+.common {
+    height: 40px;
+    margin-bottom: 10px;
+    min-width: 1200px;
+    background-color: #fe7a24;
+}
+.common .categorys {
+    width: 242px;
+    height: 40px;
+    position: relative;
+    display: block;
+    float: left;
+    background-color: #ff6a00;
+}
+.categorys .categorys-title {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 40px;
+    display: block;
+    margin: 0 0 -5px;
+    padding: 0 15px;
+}
+.categorys .categorys-title a {
+    color: #fff;
+}
+.categorys-title .iconfont {
+    float: right;
+    color: #fff;
+    padding-right: 10px;
+}
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    border: 1px solid rgba(12, 12, 12, 0.15);
+}
+
+.common .categorys .dropdown-cate{
+    width: 210px;
+    margin-top: -1px;
+    border-color: #f60;
+    border-radius: 0;
+    padding: 10px 15px 0;
+    border-bottom: 3px solid #f60;
+    background-color: #fff;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.175);
+
+}
+.dropdown-cate h4{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 6px;
+    padding: 0;
+    color: #ff6a00;
+    /* width: 208px; */
+}
+.dropdown-cate h4 a{
+    color: #f60;
+}
+.categorys .dropdown-cate .cate-list{
+    margin: 0 0 8px;
+    padding:  0 0 8px;
+    border-bottom: 1px solid #ccc;
+}
+.categorys .dropdown-cate .cate-list li{
+    margin-right: 4px;
+    font-size: 12px;
+    line-height: 22px;
+    display: inline-block;
+}
+/* .dropdown-cate .categorys-title:hover .dropdown-menu{
+    display: block;
+} */
+/* 导航右边列表 */
+.navlist2{
+    margin:  0 0 0 230px;
+    height: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+.navlist2 li{
+    float: left;
+    font-size: 15px;
+    color: #232628;
+    font-weight: bold;
+}
+.navlist2 li a{
+    display: inline-block;
+    padding: 8px 24px;
+    color: #fff;
+}
+.navlist2 li a:hover{
+    background-color: #f80;
+}
+/* 导航右边列表结束 */
+
+/* 中间选项卡 */
+.goods-bar{
+    height: 44px;
+    background: #fff;
+    line-height: 44px;
+    padding: 10px 10px 6px 20px;
+    border-bottom: 1px solid #484848;
+    margin-bottom: 10px;
+}
+.fl{
+    width: 247px;
+    height: 27px;
+    float: left;
+}
+.fl li{
+    float: left;
+    margin-right: 20px;
+}
+.fl li a{
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+}
+.fl li.active a{
+    color: #f60;
+}
+.goods-profilter{
+    height: 137px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+.product-filter-item{
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 24px 16px;
+    box-sizing: border-box;
+}
+.product-filter-item__name {
+    color: #767677;
+}
+.product-filter-item__val {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 32px;
+    color: #222223;
+    font-size: 0;
+}
+.product-filter-item__val li{
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 30px;
+}
+.product-filter-item__val li.active a{
+    color: #f60;
+}
+.product-list ul{
+    display:flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-list ul li {
+    float: left;
+    width: 285px;
+    height: auto;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+
+}
+.product-list img {
+    width: 100%;
+    height: auto;
+    background: #C1C1C1;
+    display: inline;
+}
+.product-list .product-info {
+    text-align: center;
+    font-family: "微软雅黑", simhei;
+    color: #233333;
+    padding: 10px;
+}
+.product-list .product-info .info-word {
+    font-weight: bold;
+    font-size: 14px;
+    color: #f00;
+    margin: 0;
+}
+.product-list .product-info .desc-word {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 0 10px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.product-list .product-info .desc {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+    min-height: 17px;
+}
+.product-list .product-info .price {
+    display: inline-block;
+    font-size: 16px;
+}
+.com-main ul li:hover{
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+
+/* 鲜花礼仪 */
+.panel{
+    border: 1px solid #ebebeb;
+    height: 226px;
+}
+.panel-heading{
+    padding: 15px 20px;
+    color: #737373;
+    background-color: #ebebeb;
+    border-color: #ebebeb;
+}
+.panel-heading .panel-title {
+    font-size: 14px;
+    color: #737373;
+}
+.panel-body {
+    padding: 15px;
+    display:flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+.panel-body ul {
+    float: left;
+    width: 33%;
+    padding-left: 40px;
+    border-left: 1px solid #ccc;
+    /* list-style: disc; */
+}
+.panel-body ul:first-child{
+    border-left: none;
+}
+.panel-body ul li{
+    font-size: 12px;
+    line-height: 30px;
+}
+.panel-body ul li a{
+    font-size: 12px;
+}

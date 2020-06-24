@@ -10,7 +10,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 0px;
-    margin-top: 30px;
+    margin-top: 18px;
     margin-left: 80px;
 }
 .loginsear .sear-box .searinput{
@@ -39,6 +39,24 @@
     background: #f60;
    color: #fff;
    border-radius: 0px;
+}
+.loginsear .hotword{
+    margin-top: 8px;
+    margin-left: 84px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.loginsear .hotword a{
+    margin: 0 5px;
+    padding-right: 10px;
+    color: #B4BABF;
+    border-right: 1px solid #ccc;
+}
+.loginsear .hotword a:last-child{
+    border-right: none;
+}
+.loginsear .hotword a:hover{
+    color: #FF734C;
 }
 .tel{
     margin-top: 20px;
@@ -84,6 +102,7 @@
 }
 .login-box .login-tabs li.active {
     color: #FF734C;
+    border-bottom: 1px solid #FF734C;
 }
 /* 登录身体部分 */
 .login-box .login-form {
@@ -142,22 +161,22 @@
 }
 /* 微信登录 */
 .login-box .login-form {
-    min-height: 280px;
-    padding: 20px 24px 0;
+    min-height: 300px;
+    padding: 2px 16px 0;
 }
 .login-box .login-form.login-form-wx .qrcode-box {
     margin-top: 20px;
     text-align: center;
     overflow: hidden;
 }
-.login-box .login-form.login-form-wx .qrcode-box .qrcode-img {
+.login-form-wx .qrcode-box .qrcode-img img{
     position: relative;
     width: 152px;
     height: 152px;
     margin: 26px auto 0;
     border: 1px solid #E9ECF0;
 }
-.login-box .login-form.login-form-wx .qrcode-box .qrcode-text {
+.login-form-wx .qrcode-box .qrcode-text {
     position: relative;
     font-size: 14px;
     color: #232628;
@@ -165,7 +184,7 @@
     margin-top: 30px;
     vertical-align: top;
 }
-.login-box .login-form.login-form-wx .qrcode-box .qrcode-text {
+.login-form-wx .qrcode-box .qrcode-text {
     position: relative;
     font-size: 14px;
     color: #232628;

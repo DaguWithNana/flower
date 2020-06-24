@@ -5,6 +5,7 @@
     $(".cake-dropdown-pop").mouseleave(function(){
         $(this).css("display","none");
     })
+
     $.ajax({
         type: "get",
         url: "../json/index-kind.json",
@@ -21,6 +22,7 @@
             $('.fcake-brands ul').append(html);
         }
     });
+    
     $.ajax({
         type: "get",
         url: "../json/index-fangda.json",
@@ -45,5 +47,5 @@
             $('.fl-products-row').append(html);
         }
     });
-
+   
 })           

@@ -4,8 +4,296 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品列表页</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/goodlist.css">
+    <link rel="stylesheet" href="../iconfoot/iconfont.css">
+    <script src="../iconfoot/iconfont.js" href="http://at.alicdn.com/t/font_1700460_day41wqfbtk.css"></script>
+    <script src="../jq/jquery.js"></script>
+    <script src="../jq/goodlist.js"></script>
 </head>
 <body>
-    
+    <div class="top-nav clearFixed::after">
+        <!-- 宽1200高40 -->
+        <div class="topnavCon main">
+            <ul class="topnavLeft">
+                <li><a href="javascript:void(0)"><span class="iconfont icon-icon-5"></span>收藏鲜花网(hua.com)</a></li>
+                <li class="menu">
+                    <a href="javascript:void(0)">
+                        <span class="iconfont icon-gongzhonghao"></span>
+                        关注微信
+                    </a>
+                    <div class="weixin">
+                        <img src="../images/wxguanjia_qrcode.png" alt="" width="124px">
+                        <p>
+                            "扫码关注"<br/>"回复"礼物" 更多惊喜！"
+                        </p>
+                    </div>
+                </li>
+                <li class="menu">
+                    <a href="javascript:void(0)">
+                        <span class="iconfont icon-mobile_phone"></span>
+                        花礼网app
+                    </a>
+                    <div class="weixin">
+                        <img src="../images/wxguanjia_qrcode.png" alt="" width="124px">
+                        <p>
+                            "扫码关注"<br/>"回复"礼物" 更多惊喜！"
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="topnavRight">
+                <li><a href="javascript:;">你好，请登录</a>
+                    <a href="javascript:;">注册</a>
+                </li>
+                <li><a href="javascript:;">订单查询</a></li>
+                <li class="menu2">
+                    <a href="javascript:;">客户服务</a>
+                    <div class="kehuserver">
+                        <a href="javscript:;">在线付款</a>
+                        <a href="javscript:;">帮助中心</a>
+                        <a href="javscript:;">售后服务</a>
+                        <a href="javscript:;">配送范围</a>
+                        <a href="javscript:;">留言反馈</a>
+                    </div>
+                </li>
+                <li><a href="javascript:;">
+                    购物车
+                    <span>(0)</span></a></li>
+                <li><a href="javascript:;">
+                    中国鲜花礼品网:中国鲜花网领先品牌
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header main">
+            <div class="logo">
+                <img src="../images/common_spritelogo.png" alt="">
+            </div>
+            <div class="loginsear">
+                <form action="" method="">
+                    <div class="sear-box">                        
+                        <input type="text" name="" id="" class="searinput" placeholder="商品搜索">
+                        <span class="sear-btn">
+                            <button class="searbutton" type="button">搜索</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <div class="tel">
+                <div class="tel1">
+                    <img src="../images/common_sprite_tel.png" alt="">
+                    <div class="tel-info">400-889-8188</div>
+                </div>
+                <div class="tel2">
+                    <img src="../images/common_sprite_tel2.png" alt="">
+                    <div class="tel-info">
+                        <a href="javascript:;">在线客服</a>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+    <!-- 头部logo结束 -->
+     <!--  导航-->
+     <div class="common clearFixed">
+        <div class="container main">
+            <div class="categorys dropdown">
+                <h3 class="categorys-title">
+                    <a href="javascript:;">全部商品导购</a>
+                    <span class="iconfont icon-arrowBottom-fill"></span>
+                </h3>
+
+                <div class="dropdown-menu dropdown-cate">
+                    <h4><a href="/flower/">鲜花</a></h4>
+                    <ul class="cate-list list-inline">
+                        <li><a target="_blank" href="/aiqingxianhua/">爱情鲜花</a></li>
+                        <li><a target="_blank" href="/shengriliwu/">生日鲜花</a></li>
+                        <li><a target="_blank" href="/youqingxianhua/">友情鲜花</a></li>
+                        <li><a target="_blank" href="/songzhangbeixianhua/">问候长辈</a></li>
+                        <li><a target="_blank" href="/zhufuqinghexianhua/">祝贺鲜花</a></li>
+                        <li><a target="_blank" href="/hunqingxianhua/">婚庆鲜花</a></li>
+                        <li><a target="_blank" href="/tanbingweiwenxianhua/">探病慰问</a></li>
+                        <li><a target="_blank" href="/daoqianxianhua/">道歉鲜花</a></li>
+                        <li><a target="_blank" href="/businessFlower/kaiyehualan/">开业花篮</a></li>
+                    </ul>
+                    <h4><a href="/yongshenghua/">永生花</a></h4>
+                    <ul class="cate-list list-inline">
+                        <li><a target="_blank" href="/yongshenghua/yongshenghua_box.html">经典花盒</a></li>
+                        <li><a target="_blank" href="/yongshenghua/yongshenghua_large.html">巨型玫瑰</a></li>
+                        <li><a target="_blank" href="/yongshenghua/yongshenghua_lavender.html">薰衣草</a></li>
+                        <li><a target="_blank" href="/yongshenghua/yongshenghua_vase.html">永生瓶花</a></li>
+                        <li><a target="_blank" href="/yongshenghua/yongshenghua_characteristic.html">特色永生花</a></li>
+                    </ul>
+                    
+                    <h4><a href="/gifts/">礼品</a></h4>
+                    <ul class="cate-list list-inline">
+                        <li><a target="_blank" href="/livingflower/">泰国保鲜花</a></li>
+                        <li><a target="_blank" href="/gifts/musicbox/">音乐盒</a></li>
+                        <li><a target="_blank" href="/gifts/crystallaser/">水晶内雕</a></li>
+                        <li><a target="_blank" href="/gifts/goldenflower/">金箔花</a></li>
+                        <li><a target="_blank" href="/gifts/cosmeticmirror/">化妆镜</a></li>
+                        <li><a target="_blank" href="/gifts/kingking/">香薰系列</a></li>
+                        <li><a target="_blank" href="/gifts/bestlife/">音乐睡枕</a></li>
+                        <li><a target="_blank" href="/gifts/vase/">花瓶/相框</a></li>
+                        <li><a target="_blank" href="/katonghuashu/">卡通花束</a></li>
+                        <li><a target="_blank" href="/toys/">品牌公仔</a></li>
+                        <li><a target="_blank" href="/gifts/shoushi/">首饰</a></li>
+                        
+                        <li><a target="_blank" href="/gifts/giftstalk/">Giftstalk精选</a></li>
+                        <li><a target="_blank" href="/gifts/dengshi/">创意礼品</a></li>
+                        <li><a target="_blank" href="/qiyetuangou/gift_card.html">礼品卡</a></li>
+                        <li><a target="_blank" href="/gifts/duorouzhiwupenzai/">多肉植物盆栽</a></li>
+                    </ul>
+                    <h4><a href="/Plant/">绿植</a></h4>
+                    <ul class="cate-list list-inline">
+                        <li><a target="_blank" href="/Plant/greenplant/">绿色植物</a></li>
+                        <li><a target="_blank" href="/Plant/potflower/">盆栽花卉</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="navlist2">
+                <li><a href="/">首页</a></li>
+                <li><a href="/flower/">鲜花</a></li>
+                <li><a href="/yongshenghua/">永生花</a></li>
+                <li><a href="/cake/">蛋糕</a></li>
+                <li><a href="/gifts/">礼品</a></li>
+                <li><a href="/gifts/chocolates/">巧克力</a></li>
+                <li><a href="/huayu/">花语大全</a></li>
+                <li><a href="/you/">设计师臻选鲜花</a></li>
+                    <li><a href="/theme/duanwujie/">端午节鲜花礼物</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <!-- 头部导航 -->
+    <div class="top-banner">
+        <div class="topbanImg main">
+            <img src="../images/ysh-top-banner.jpg" alt="">
+        </div>
+    </div>
+    <!-- 头部导航 -->
+    <!-- 中间综合选项卡 -->
+    <div class="main-box">
+        <div class="goods-main main">
+             <!-- 选项卡头部 -->
+            <div class="goods-bar">
+                <ul class="fl">
+                    <li class="active"><a href="javascript:;">综合</a></li>
+                    <li><a href="javascript:;">销量</a></li>
+                    <li><a href="javascript:;">价格</a></li>
+                    <li><a href="javascript:;">最新</a></li>
+                </ul> 
+            </div>
+            <div class="goods-profilter">
+                <div class="product-filter-item">
+                    <span class="product-filter-item__name">分类：</span>
+                    <ul class="product-filter-item__val">
+                        <li class='active'><a href="/yongshenghua/?r=0">全部</a></li>
+                        <li class=''><a href="/yongshenghua/yongshenghua_box.html?r=0">经典花盒</a></li>
+                        <li class=''><a href="/yongshenghua/yongshenghua_large.html?r=0">巨型玫瑰</a></li>
+                        <li class=''><a href="/yongshenghua/yongshenghua_vase.html?r=0">永生瓶花</a></li>
+                        <li class=''><a href="/yongshenghua/yongshenghua_characteristic.html?r=0">特色永生花</a></li>
+                    </ul>
+                </div>
+                <div class="product-filter-item">
+                    <span class="product-filter-item__name">人群：</span>
+                    <ul class="product-filter-item__val">
+                        
+                        <li class=''><a href="/yongshenghua/songlianren/?r=0">送恋人爱人</a></li>
+                        <li class=''><a href="/yongshenghua/songfumu/?r=0">送父母长辈</a></li>
+                        <li class=''><a href="/yongshenghua/songpengyou/?r=0">送朋友同事</a></li>
+                    </ul>
+                </div>
+            </div>
+        <!-- 选项卡头部 -->
+        </div>
+    </div>
+    <!-- 选项卡商品列表 -->
+    <div class="product-list">
+        <div class="com-main main">
+            <ul>
+                <!-- <li>
+                    <a href="">
+                        <img src="../images/glist1.jpg" alt="">
+                        <div class="product-info">
+                            <p class="info-word">创意新品 永生花礼盒</p>
+                            <h5 class="desc-word">永生花/一鹿(路)有你永生花小夜灯</h5>
+                            <p class="desc">永生花礼盒</p>
+                            <span class="price">¥ 288</span>
+                        </div>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <!-- 选项卡商品列表结束 -->
+    <!-- 导航end -->
+   
+        <!-- 鲜花常识&送花礼仪 -->
+        <div class="panel panel-default main">
+            <div class="panel-heading">
+                <h3 class="panel-title">永生花相关文章推荐</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="/huayu/11589.html" target="_blank">• 什么是永生花？</a> </li>
+                    <li><a href="/huayu/11590.html" target="_blank">• 永生花哪里有卖？</a> </li>
+                    <li><a href="/huayu/11591.html" target="_blank">• 永生花是真花吗？</a></li>
+                    <li><a href="/huayu/11593.html" target="_blank">• 永生花多少钱？</a></li>
+                    <li><a href="/huayu/11598.html" target="_blank">• 永生花怎么保养？</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/profile/11914.html" target="_blank">• 永生花寓意是什么？永生花的意义是什么？</a></li>
+                    <li><a href="/huayu/11910.html " target="_blank">• 永生花是什么花？如何制作永生花？永生花制作方法介绍</a></li>
+                    <li><a href="/huayu/11905.html" target="_blank">• 永生花价格是多少？永生花贵吗？</a> </li>
+                    <li><a href="/huayu/12158.html" target="_blank">• 永生花花语，永生玫瑰花代表什么？</a> </li>
+                    <li><a href="/huayu/11897.html" target="_blank">• 永生花盒是什么？永生花盒哪家最好？</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/huayu/11865.html" target="_blank">• 情人节送永生花代表什么？ </a></li>
+                    <li><a href="/huayu/13091.html" target="_blank">• 进口永生玫瑰与国产永生玫瑰的区别</a></li>
+                    <li><a href="/huayu/10594.html" target="_blank">• 送女朋友保鲜花，代表不凋谢的爱情</a> </li>
+                    <li><a href="/huayu/10949.html" target="_blank">• 送女孩子什么礼物好？泰国保鲜花推荐</a></li>
+                    <li><a href="/huayu/12942.html" target="_blank">• 结婚纪念送花：永生花·花永生·爱永恒</a></li>
+                </ul>
+            </div>
+        </div>
+<!-- 鲜花常识&送花礼仪 End -->
+ 
+
+  <!-- footer -->
+  <div class="ft" style="background-color: #fff;">
+    <div class="fter-container main">
+        <!-- foot导航 -->
+        <div class="ft-nav-login">
+            <a href="javascript:;">首页</a>
+            <a href="javascript:;">关于我们</a>
+            <a href="javascript:;">媒体报道</a>
+            <a href="javascript:;">联系方式</a>
+            <a href="javascript:;">企业团购</a>
+            <a href="javascript:;">花店入驻</a>
+            <a href="javascript:;">友情链接</a>
+            <a href="javascript:;">在线补款</a>
+            <a href="javascript:;">为什么选择中国鲜花礼品网</a>
+        </div>
+        <!-- foot证书 -->
+        <div class="ft-site" style="text-align: center;">  
+            <div class="ft-auth" style=" padding: 20px 0;">
+                <a href="javascript:;"><span class="icon1"></span></a>
+                <a href="javascript:;"><span class="icon2"></span></a>
+                <a href="javascript:;"><span class="icon3"></span></a>
+                <a href="javascript:;"><span class="icon4"></span></a>
+            </div>
+            <p>中国花卉协会会员 中国电子商务协会会员 ICP经营许可证：粤B2-20050744 粤ICP备09171662号 粤公网安备44030502000373号 Copyright © 2005-2020</p>
+            <p>花礼网 （中国鲜花礼品网） www.hua.com 深圳市百易信息技术有限公司 中国鲜花网领先品牌，鲜花速递专家！</p>
+        </div>
+       
+    </div>
+</div>
+<!-- footer结束 -->
 </body>
+
 </html>

@@ -1,0 +1,52 @@
+.text-primary {
+    color: #ff6a00;
+}
+.breadcrumbs a{
+    color: #737373;
+}
+
+/* 商品详情 */
+.detail-pro{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 30px;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    height: 650px;
+}
+.detail-prol{
+    position: relative;
+    float: left;
+    width: 520px;
+}
+.prol-img{
+    position: relative;
+    width: 450px;
+    margin: 0 auto;
+}
+.prol-bigimg{
+    position: relative;
+    overflow: hidden;
+    width: 430px;
+    height: 469px;
+    margin: 0 auto 20px;
+}
+.prol-bigimg .swiper img{
+    width: 430px;
+    height: 469px;
+}
+/* 小图 */
+.prol-img .prol-smallimg{
+    width: 430px;
+    margin: 0 auto;
+    text-align: center;
+}
+.prol-img .prol-smallimg img {
+    width: 68px;
+    height: 68px;
+    margin: 0 12px;
+    padding: 1px;
+    border: 1px solid #d9d9d9;
+    vertical-align: middle;
+    display: inline-block;
+}
