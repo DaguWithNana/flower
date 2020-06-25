@@ -62,7 +62,6 @@ color: #fe451b;
     float: right;
     width: 610px;
     line-height: 40px;
-    overflow: hidden;
 }
 .topnavRight li{
     float: left;
@@ -94,7 +93,7 @@ color: #fe451b;
     border: 1px solid #e9ecf0;
     border-top-color: transparent;
     text-align: center;
-    z-index: 1000;
+    z-index: 9000;
 }
 .topnavRight .menu2:hover .kehuserver{
     display: block;

@@ -50,3 +50,95 @@
     vertical-align: middle;
     display: inline-block;
 }
+
+/* 右边详情 */
+.detail-pro .detail-pror {
+    float: right;
+    width: 560px;
+}
+.detail-pro .detail-pror .title {
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.detail-pro .detail-pror .title .product-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 6px 0;
+    padding: 0;
+    color: #4d4d4d;
+}
+.detail-pro .detail-pror .title .product-subtitle {
+    color: #ff6a00;
+}
+.detail-pro .detail-pror .attribute {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.detail-pro .detail-pror .attribute dl {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #4d4d4d;
+}
+.detail-pro .detail-pror .attribute dl > dt {
+    font-weight: normal;
+    float: left !important;
+}
+.detail-pro .detail-pror .attribute dl > dd {
+    margin-left: 70px;
+}
+.detailPrice{
+    color: #4d4d4d;
+}
+.price-original{
+    margin-left: -2px;
+    text-decoration: line-through;
+}
+.detailPrice .price-sell strong{
+    font-weight: bold;
+}
+.price-sell em {
+    font-weight: bold;
+    font-style: normal;
+    color: #ff6a00;
+}
+.price-sign {
+    font-family: arial;
+    margin-right: -4px;
+}
+.price-sell em.price-num {
+    font-size: 18px;
+    margin-left: 6px;
+}
+/* 加入购物车按钮 */
+.detail-pro .detail-pror .btn-buy {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.btn-buy .btn{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+}
+.btn-buy .btn-lg{
+    font-size: 18px;
+    margin-right: 15px;
+    padding: 8px 25px;
+}
+.btn-buy .btn-addcart {
+    background: #fff !important;
+    border: 1px solid #ff6a00;
+    color: #ff6a00 !important;
+}
+.btn-buy .btn-primary{
+    color: #fff;
+    background-color: #f60;
+    border-color: #f60;
+}
+.btn-link {
+    color: #737373;
+}
