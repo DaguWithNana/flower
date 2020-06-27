@@ -1,0 +1,232 @@
+//添加商品数据
+var uid=getCookie("uid");
+// console.log(uid)
+var data=[{
+    "pimg":"../images/glist1.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist2.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist3.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist4.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist5.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist6.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist7.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist8.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist1.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist2.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist3.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist4.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist5.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist6.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist7.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist8.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist1.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist2.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist3.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist4.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist5.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist6.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist7.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist8.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist1.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist2.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist3.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist4.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist5.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist6.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist7.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist8.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist1.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist2.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist3.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+},{
+    "pimg":"../images/glist4.jpg",
+    "pdesc":"永生花/一鹿(路)有你永生花小夜灯",
+    "pname":"永生花礼盒",
+    "pprice":"288",
+    "uid":uid
+}]
+for(var i=0;i<data.length;i++){
+    // console.log(data);
+    $.ajax({
+        type: "post",
+        url: "http://jx.xuzhixiang.top/ap/api/goods/goods-add.php",
+        data:data[i],
+        dataType: "json",
+        success: function (response) {
+            console.log("ozhnogwu")
+        }
+    });
+}

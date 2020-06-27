@@ -36,8 +36,8 @@
 }
 /* 商品列表 */
 .cart-panel .bd {
-    /* padding: 0 20px; */
-    height: 120px;
+    padding: 0 55px;
+  
 }
 .cart-panel .order-list:first-child {
     border-top: none;
@@ -66,6 +66,9 @@
 }
 .cart-panel .order-list .img-box{
     width: 100px;
+}
+.cart-panel .order-list li img{
+    width: 80px;
 }
 .cart-panel .order-list li.product{
     width: 332px;

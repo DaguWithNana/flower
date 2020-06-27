@@ -7,22 +7,29 @@
     })
     })
 
+    var uid= getCookie("uid");
+    // console.log(uid);
+    
 $.ajax({
     type: "get",
-    url: "../json/goodslist.json",
+    url: "http://jx.xuzhixiang.top/ap/api/allproductlist.php",
+    data:{
+        uid:uid
+    },
     dataType: "json",
     success: function (response) {
-        console.log(response);
+        //console.log(response);
+        let data=response.data;
+        console.log(data);
             var html='';
-            for(var i =0;i<response.length;i++){
+            for(var i =0;i<data.length;i++){
                 html+=` <li>
-                        <a href="">
-                            <img src="${response[i].img}" alt="">
+                        <a href="../html/detail.html?pid=${data[i].pid}">
+                            <img src="${data[i].pimg}" alt="">
                             <div class="product-info">
-                                <p class="info-word">${response[i].infoWord}</p>
-                                <h5 class="desc-word">${response[i].descword}</h5>
-                                <p class="desc">${response[i].desc}</p>
-                                <span class="price">${response[i].price}</span>
+                               <h5 class="desc-word">${data[i].pdesc}</h5>
+                                <p class="desc">${data[i]. pname}</p>
+                                <span class="price">${data[i].pprice}</span>
                             </div>
                         </a>
                     </li>
@@ -31,3 +38,6 @@ $.ajax({
             $('.com-main ul').append(html);
     }
 });
+
+//
+//<h5 class="desc-word">${response[i].descword}</h5>

@@ -26,8 +26,14 @@ $(function(){
             password:$("#pwd").val()
         },(data)=>{
             console.log(data)
+           // console.log(data.data.token)
             if(data.code == 1){
-                location.href ="../html/index.html";
+                setCookie("uid",data.data.id, 8)
+                setCookie("token",data.data.token, 8)
+                setCookie("uname",data.data.username, 8)
+
+               
+               location.href ="../html/index.html";
             }else{
                 alert(data.msg);
             }
