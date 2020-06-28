@@ -102,6 +102,8 @@ $.ajax({
          
             $('.detail-pro').append(html);
 
+            // 加入购物车
+
             $("#Btn_AddToCart").click(function(){
 
                 $.get("http://jx.xuzhixiang.top/ap/api/add-product.php",{
